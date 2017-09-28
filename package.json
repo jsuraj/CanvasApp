@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://jsuraj.github.io/CanvasApp",
   "dependencies": {
+    "p5": "^0.5.14",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },

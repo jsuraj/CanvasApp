@@ -1,10 +1,10 @@
 var sketch = function (p) {
-  var gray = 0;
+  var black = 0;
   var x,y;
 
   p.setup = function () {
     p.createCanvas(p.windowWidth, p.windowHeight);
-    p.background(gray);
+    p.background(black);
   };
 
   p.myCustomRedrawAccordingToNewPropsHandler = function (props) {
@@ -14,18 +14,13 @@ var sketch = function (p) {
   };
 
   p.draw = function () {
-    // p.rect(p.width/2, p.height/2, 200, 200);
     // console.log(x, y);
+    p.fill(255);
     p.ellipse(p.mouseX, p.mouseY, 50, 50);
     console.log('props: '+x+' '+y);
     console.log('default: '+p.mouseX+' '+p.mouseY);
   };
 
-
-  p.mousePressed = function () {
-    // console.log(p.MouseX);
-    gray = (gray + 16) % 256;
-  };
 };
 
 
